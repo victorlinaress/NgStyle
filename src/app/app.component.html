@@ -1,8 +1,21 @@
-b<h1
+<h1
   [ngStyle]="{
     'font-size': fontSize + 'px',
-    'color': textColor,
+    'color': textColor
   }"
 >
-<button (click) = "increaseFontSize()"> +A</button>
+  Sou um H1
 </h1>
+
+<h1
+  [style.font-size.px]="fontSize"
+  [style.color]="textColor"
+>
+  Sou um H2
+</h1>
+
+<h1 [style]="stylesString">
+</h1>
+
+<button (click)="increaseFontSize()">+A</button>
+<button (click)="toggleFontColor()">Alternar Cor</button>
