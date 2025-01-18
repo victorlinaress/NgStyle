@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Style';
+fontSize: number = 15;
+textColor: 'white' | 'orange' = 'white'
+
+increaseFontSize() {
+  this.fontSize +=5
+}
 }
